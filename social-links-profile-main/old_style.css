@@ -1,0 +1,129 @@
+@font-face {
+    font-family: 'Inter-Bold';
+    src: url('assets/fonts/static/Inter-Bold.ttf');
+}
+
+/* body{
+    margin: 0;
+    padding: 0;
+    background: #dcdcdc;
+    font-family: 'Inter-Bold';
+    overflow: auto;
+    position: relative;
+} */
+
+/* BLACK SECTION */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+    /* width: 100%;
+    height: 100vh; */
+    background: red;
+    margin: 150px 100px;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+/* CARD */
+.card{
+    width: 300px;
+    background: #1f1f1f;
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    color: white;
+}
+
+/* IMAGE */
+.card img{
+    width: 90px;
+    border-radius: 50%;
+}
+
+/* HEADINGS */
+.card h1{
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+.card h3{
+    color: yellowgreen;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.card p{
+    color: #cfcfcf;
+    margin-bottom: 25px;
+}
+
+/* BUTTONS */
+.card button{
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 15px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: #333;
+    color: white;
+
+    font-weight: bold;
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.card button:hover{
+    background: yellowgreen;
+    color: black;
+}
+
+/* DECORATIVE TOP CIRCLE */
+.circle-top{
+    width: 300px;
+    height: 300px;
+
+    border: 12px solid #4cc9f0;
+    border-radius: 50%;
+
+    position: absolute;
+
+    top: -150px;
+    left: -50px;
+}
+
+/* DOTS */
+.dots-left{
+    width: 120px;
+    height: 120px;
+
+    position: absolute;
+    left: 0;
+    bottom: 120px;
+
+    background-image: radial-gradient(#4cc9f0 25%, transparent 25%);
+    background-size: 20px 20px;
+}
+
+/* ZIGZAG */
+.zigzag-bottom{
+    width: 250px;
+    height: 50px;
+
+    position: absolute;
+    right: 40px;
+    bottom: 20px;
+
+    background:
+        linear-gradient(-45deg, transparent 16px, #ffb3c1 0),
+        linear-gradient(45deg, transparent 16px, #ffb3c1 0);
+
+    background-size: 32px 32px;
+}
