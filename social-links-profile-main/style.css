@@ -17,18 +17,33 @@
     font-family: 'Inter-Bold';
     src: url('assets/fonts/static/Inter-SemiBold.ttf');
 }
-.container{
-    height: 100vh; 
+
+@media (min-width: 375px){
+    .container{
+    height: 100vh;
     background: red;
-    /* margin: 150px 100px; */
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     position: relative;
     z-index: 2;
-    background-color: var(--grey-900);
-}
+    background-color:blue;
+    /* background-color: var(--grey-900); */
+}}
+@media (min-width: 1440px){
+    .container{
+    height: 100vh;
+    background: red;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    /* background-color: var(--grey-900); */
+    background-color:orange;
+}}
 /* CARD */
 .card{
     width: 300px;
@@ -60,13 +75,12 @@
     margin-bottom: 25px;
     font-size: 14px;
 }
-  .card ul{
+.card ul{
     list-style: none;
     display: flex;
     justify-content:center;
     flex-direction:column; 
     align-items: center;
-   
 } 
 .card ul li{
     width: 75%;
@@ -81,9 +95,10 @@
     text-decoration: none;
     color: var(--white);
 }
-.card ul li a :hover{
+.card ul li:hover{
     text-decoration: none;
+    background-color: rgba(43, 120, 39, 0.392);
 }
-.card ul li a :active{
-    background-color: none;
+.card ul li:active{
+    background-color: var(--green);
 }
